@@ -8,7 +8,7 @@
     "lint:eslint": "vue-cli-service lint",
     "lint:prettier": "prettier --write \"./**/*.{html,vue,ts,js,json,md,scss}\"",
     "lint:style": "stylelint --fix --custom-syntax postcss-scss \"**/*.{vue,less,postcss,css,scss}\"",
-    "lint": "npm run lint:eslint && npm run lint:prettier"
+    "lint": "npm run lint:eslint && npm run lint:prettier && npm run lint:style"
   },
   "dependencies": {
     "core-js": "^3.8.3",
