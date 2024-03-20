@@ -5,7 +5,7 @@ import store from './store'
 
 Vue.config.productionTip = false
 
-let abc = '567'
+var abc = '567'
 
 console.log(abc)
 
