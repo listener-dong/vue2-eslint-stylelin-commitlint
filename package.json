@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint:eslint": "vue-cli-service lint",
-    "lint:prettier": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
+    "lint:prettier": "prettier --write \"./**/*.{html,vue,ts,js,json,md,scss}\"",
+    "lint:style": "stylelint --fix --custom-syntax postcss-scss \"**/*.{vue,less,postcss,css,scss}\"",
     "lint": "npm run lint:eslint && npm run lint:prettier"
   },
   "dependencies": {
@@ -28,9 +29,14 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
     "lint-staged": "^11.1.2",
+    "postcss": "^8.4.37",
+    "postcss-html": "^1.6.0",
     "prettier": "^2.4.1",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-order": "^6.0.4",
     "vue-template-compiler": "^2.6.14"
   },
   "gitHooks": {
